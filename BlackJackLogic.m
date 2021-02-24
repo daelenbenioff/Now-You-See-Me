@@ -287,6 +287,7 @@ if dealerTotVal>=player1Val & dealerTotVal>=player2Val
     
 elseif player1Val==player2Val & player1Val>dealerTotVal
     %"push"
+    %basically means that everyone ties?? i think
    
     playblackjack
     
