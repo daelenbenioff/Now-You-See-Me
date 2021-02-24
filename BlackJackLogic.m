@@ -1,9 +1,9 @@
 %Begin hand
 
-deck= ['SA','CA','DA','HA','S2','C2','D2','H2','S3','C3','D3','H3','S4',......
-    'C4','D4','H4','S5','C5','D5','H5','S6','C6','D6','H6','S7','C7',......
-    'D7','H7','S8','C8','D8','H8','S9','C9','D9','H9','S10','C10','D10',......
-    'H10','SJ','CJ','DJ','HJ','SQ','CQ','DQ','HQ','SK','CK','DK','HQ'];
+deck= ['KingSpades','KingHearts','KingDiamonds','KingClubs','JackSpades','JackHearts','JackDiamonds','JackClubs','AceSpades','AceHearts','AceDiamonds','AceClubs','10Spades',......
+    '10Hearts','10Diamonds','10Clubs','9Spades','9Hearts','9Diamonds','9Clubs','8Spades','8Hearts','8Diamonds','8Clubs','7Spades','7Hearts',......
+    '5Spades','5Hearts','5Diamonds','5Clubs','4Spades','4Clubs','4Hearts','4Diamonds','3Spades','3Clubs','3Diamonds','3Hearts','2Spades',......
+    '7Diamonds','7Clubs','6Spades','6Hearts','6Diamonds','6Clubs','2Clubs','2Hearts','2Diamonds','QueenSpades','QueenClubs','QueenHearts','QueenDiamonds'];
 
 deck(1)
 %Display one card for dealer
@@ -16,7 +16,7 @@ deck(1)
 
 %DEALER LOGIC
 if dealerCardIndex==1
-    dCard=('SA');
+    dCard=('AceSpades');
     %determines if count should use 11 or 1
     testAce=((dealercount)+11);
     if testAce > 21 
@@ -26,7 +26,7 @@ if dealerCardIndex==1
     end
     
 elseif dealerCardIndex==2
-    dCard=('CA');
+    dCard=('AceClubs');
     %determines if count should use 11 or 1
     testAce=((dealercount)+11);
     if testAce > 21 
@@ -36,7 +36,7 @@ elseif dealerCardIndex==2
     end
     
 elseif dealerCardIndex==3
-    dCard=('DA');
+    dCard=('AceDiamonds');
     %determines if count should use 11 or 1
     testAce=((dealercount)+11);
     if testAce > 21 
@@ -46,7 +46,7 @@ elseif dealerCardIndex==3
     end
     
 elseif dealerCardIndex==4
-    dCard=('HA');
+    dCard=('AceHearts');
     %determines if count should use 11 or 1
     testAce=((dealercount)+11);
     if testAce > 21 
@@ -56,195 +56,195 @@ elseif dealerCardIndex==4
     end
     
 elseif dealerCardIndex==5
-    dCard=('S2');
+    dCard=('2Spades');
     dealerCardValue=2;
     
 elseif dealerCardIndex==6
-    dCard=('C2');
+    dCard=('2Clubs');
     dealerCardValue=2;
     
 elseif dealerCardIndex==7
-    dCard=('D2');
+    dCard=('2Diamonds');
     dealerCardValue=2;
     
 elseif dealerCardIndex==8
-    dCard=('H2');
+    dCard=('2Hearts');
     dealerCardValue=2;
     
 elseif dealerCardIndex==9
-    dCard=('S3');
+    dCard=('3Spades');
     dealerCardValue=3;
     
 elseif dealerCardIndex==10
-    dCard=('C3');
+    dCard=('3Clubs');
     dealerCardValue=3;
     
 elseif dealerCardIndex==11
-    dCard=('D3');
+    dCard=('3Diamonds');
     dealerCardValue=3;
     
 elseif dealerCardIndex==12
-    dCard=('H3');
+    dCard=('3Hearts');
     dealerCardValue=3;
     
 elseif dealerCardIndex==13
-    dCard=('S4');
+    dCard=('4Spades');
     dealerCardValue=4;
     
 elseif dealerCardIndex==14
-    dCard=('C4');
+    dCard=('4Clubs');
     dealerCardValue=4;
     
 elseif dealerCardIndex==15
-    dCard=('D4');
+    dCard=('4Diamonds');
     dealerCardValue=4;
     
 elseif dealerCardIndex==16
-    dCard=('H4');
+    dCard=('4Hearts');
     dealerCardValue=4;
     
 elseif dealerCardIndex==17
-    dCard=('S5');
+    dCard=('5Spades');
     dealerCardValue=5;
     
 elseif dealerCardIndex==18
-    dCard=('C5');
+    dCard=('5Clubs');
     dealerCardValue=5;
     
 elseif dealerCardIndex==19
-    dCard=('D5');
+    dCard=('5Diamonds');
     dealerCardValue=5;
     
 elseif dealerCardIndex==20
-    dCard=('H5');
+    dCard=('5Hearts');
     dealerCardValue=5;
     
 elseif dealerCardIndex==21
-    dCard=('S6');
+    dCard=('6Spades');
     dealerCardValue=6;
     
 elseif dealerCardIndex==22
-    dCard=('C6');
+    dCard=('6Clubs');
     dealerCardValue=6;
     
 elseif dealerCardIndex==23
-    dCard=('D6');
+    dCard=('6Diamonds');
     dealerCardValue=6;
     
 elseif dealerCardIndex==24
-    dCard=('H6');
+    dCard=('6Hearts');
     dealerCardValue=6;
     
 elseif dealerCardIndex==25
-    dCard=('S7');
+    dCard=('7Spades');
     dealerCardValue=7;
     
 elseif dealerCardIndex==26
-    dCard=('C7');
+    dCard=('7Clubs');
     dealerCardValue=7;
     
 elseif dealerCardIndex==27
-    dCard=('D7');
+    dCard=('7Diamonds');
     dealerCardValue=7;
     
 elseif dealerCardIndex==28
-    dCard=('H7');
+    dCard=('7Hearts');
     dealerCardValue=7;
     
 elseif dealerCardIndex==29
-    dCard=('S8');
+    dCard=('8Spades');
     dealerCardValue=8;
     
 elseif dealerCardIndex==30
-    dCard=('C8');
+    dCard=('8Clubs');
     dealerCardValue=8;
     
 elseif dealerCardIndex==31
-    dCard=('D8');
+    dCard=('8Diamonds');
     dealerCardValue=8;
     
 elseif dealerCardIndex==32
-    dCard=('H8');
+    dCard=('8Hearts');
     dealerCardValue=8;
     
 elseif dealerCardIndex==33
-    dCard=('S9');
+    dCard=('9Spades');
     dealerCardValue=9;
     
 elseif dealerCardIndex==34
-    dCard=('C9');
+    dCard=('9Clubs');
     dealerCardValue=9;
     
 elseif dealerCardIndex==35
-    dCard=('D9');
+    dCard=('9Diamonds');
     dealerCardValue=9;
     
 elseif dealerCardIndex==36
-    dCard=('H9');
+    dCard=('9Hearts');
     dealerCardValue=9;
     
 elseif dealerCardIndex==37
-    dCard=('S10');
+    dCard=('10Spades');
     dealerCardValue=10;
     
 elseif dealerCardIndex==38
-    dCard=('C10');
+    dCard=('10Clubs');
     dealerCardValue=10;
     
 elseif dealerCardIndex==39
-    dCard=('D10');
+    dCard=('10Diamonds');
     dealerCardValue=10;
     
 elseif dealerCardIndex==40
-    dCard=('H10');
+    dCard=('10Hearts');
     dealerCardValue=10;
     
 elseif dealerCardIndex==41
-    dCard=('SJ');
+    dCard=('JackSpades');
     dealerCardValue=10;
     
 elseif dealerCardIndex==42
-    dCard=('CJ');
+    dCard=('JackClubs');
     dealerCardValue=10;
     
 elseif dealerCardIndex==43
-    dCard=('DJ');
+    dCard=('JackDiamonds');
     dealerCardValue=10;
     
 elseif dealerCardIndex==44
-    dCard=('HJ');
+    dCard=('JackHearts');
     dealerCardValue=10;
     
 elseif dealerCardIndex==45
-    dCard=('SQ');
+    dCard=('QueenSpades');
     dealerCardValue=10;
     
 elseif dealerCardIndex==46
-    dCard=('CQ');
+    dCard=('QueenClubs');
     dealerCardValue=10;
     
 elseif dealerCardIndex==47
-    dCard=('DQ');
+    dCard=('QueenDiamonds');
     dealerCardValue=10;
     
 elseif dealerCardIndex==48
-    dCard=('HQ');
+    dCard=('QueenHearts');
     dealerCardValue=10;
     
 elseif dealerCardIndex==49
-    dCard=('SK');
+    dCard=('KingSpades');
     dealerCardValue=10;
     
 elseif dealerCardIndex==50
-    dCard=('CK');
+    dCard=('KingClubs');
     dealerCardValue=10;
     
 elseif dealerCardIndex==51
-    dCard=('DK');
+    dCard=('KingDiamonds');
     dealerCardValue=10;
     
 elseif dealerCardIndex==52
-    dCard=('HK');
+    dCard=('KingHearts');
     dealerCardValue=10;
 
 end
@@ -258,14 +258,15 @@ pause;
 %hit while dealerTotValue is less than or equal to 16
 while dealerTotValue <= 16
     dc1=(dc1+4);
-    dealerCardValue=(deal(dc1));
+    dealercardadd=(deal(dc1));
    
-    dealerTotValue=(dealerTotValue+dealerCardValue);
+    dealercount=(dealercount+dealerCardValue);
 end
 
 %loop ends when dealercount is greater than 16
 %checks for blackjack or bust
 if dealercount==21
+    %dealer has blackjack
     %display that the dealer won the hand
     playblackjack
    
@@ -279,23 +280,36 @@ end
 
 % WE HAVE FINAL VALUES, NOW DETERMINE WINNER
 %fix for three players!!
-if dealerTotVal>=player1Val & dealerTotVal>=player2Val
-    %dealer wins
-   
+if playercount==dealercount
+    fprintf('--Dealer has: %d--\n',dealercount)
+    fprintf('--You have: %d--\n',playercount)
+    fprintf('Dealer: "Looks like we''ve got ourselves a tie! Sorry friend, but the house wins!"\n\n')
+    fprintf('<You lose your wager.>\n')
+    fprintf('<You now have %0.2f dollars.>\n',moneycount)
+    fprintf('<Press any key to continue>')
+    pause;
     playblackjack
     
-elseif player1Val==player2Val & player1Val>dealerTotVal
-    %"push"
-   
+elseif playercount > dealercount
+    clc;
+    fprintf('--Dealer has: %d--\n',dealercount)
+    fprintf('--You have: %d--\n',playercount)
+    fprintf('Dealer: "Congratulations sir! You have won!"\n\n')
+    winnings=(playerbet*2);
+    moneycount=(moneycount+winnings);
+    fprintf('<The dealer gives you %0.2f dollars.>\n',winnings)
+    fprintf('<You now have %0.2f dollars.>\n\n',moneycount)
+    fprintf('<Press any key to return to continue.>')
+    pause;
     playblackjack
     
-elseif player1Val>player2Val & player1Val>dealerTotVal
-    %player 1 wins
-   
-    playblackjack
-    
-elseif player2Val>player1Val & player2Val>dealerTotVal
-    %player 2 wins
-    
+elseif playercount < dealercount
+    clc;
+    fprintf('--Dealer has: %d--\n',dealercount)
+    fprintf('--You have: %d--\n',playercount)
+    fprintf('Dealer: "Rough luck my friend, but you''ve lost."\n\n')
+    fprintf('<You have lost the wager>\n')
+    fprintf('<Press any key to continue>\n')
+    pause;
     playblackjack
 end
