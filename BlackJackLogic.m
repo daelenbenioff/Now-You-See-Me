@@ -258,15 +258,14 @@ pause;
 %hit while dealerTotValue is less than or equal to 16
 while dealerTotValue <= 16
     dc1=(dc1+4);
-    dealercardadd=(deal(dc1));
+    dealerCardValue=(deal(dc1));
    
-    dealercount=(dealercount+dealerCardValue);
+    dealerTotValue=(dealerTotValue+dealerCardValue);
 end
 
 %loop ends when dealercount is greater than 16
 %checks for blackjack or bust
 if dealercount==21
-    %dealer has blackjack
     %display that the dealer won the hand
     playblackjack
    
@@ -280,36 +279,23 @@ end
 
 % WE HAVE FINAL VALUES, NOW DETERMINE WINNER
 %fix for three players!!
-if playercount==dealercount
-    fprintf('--Dealer has: %d--\n',dealercount)
-    fprintf('--You have: %d--\n',playercount)
-    fprintf('Dealer: "Looks like we''ve got ourselves a tie! Sorry friend, but the house wins!"\n\n')
-    fprintf('<You lose your wager.>\n')
-    fprintf('<You now have %0.2f dollars.>\n',moneycount)
-    fprintf('<Press any key to continue>')
-    pause;
+if dealerTotVal>=player1Val & dealerTotVal >= player2Val
+    %dealer wins
+   
     playblackjack
     
-elseif playercount > dealercount
-    clc;
-    fprintf('--Dealer has: %d--\n',dealercount)
-    fprintf('--You have: %d--\n',playercount)
-    fprintf('Dealer: "Congratulations sir! You have won!"\n\n')
-    winnings=(playerbet*2);
-    moneycount=(moneycount+winnings);
-    fprintf('<The dealer gives you %0.2f dollars.>\n',winnings)
-    fprintf('<You now have %0.2f dollars.>\n\n',moneycount)
-    fprintf('<Press any key to return to continue.>')
-    pause;
+elseif player1Val==player2Val & player1Val>dealerTotVal
+    %"push"
+   
     playblackjack
     
-elseif playercount < dealercount
-    clc;
-    fprintf('--Dealer has: %d--\n',dealercount)
-    fprintf('--You have: %d--\n',playercount)
-    fprintf('Dealer: "Rough luck my friend, but you''ve lost."\n\n')
-    fprintf('<You have lost the wager>\n')
-    fprintf('<Press any key to continue>\n')
-    pause;
+elseif player1Val>player2Val & player1Val>dealerTotVal
+    %player 1 wins
+   
+    playblackjack
+    
+elseif player2Val>player1Val & player2Val>dealerTotVal
+    %player 2 wins
+    
     playblackjack
 end
