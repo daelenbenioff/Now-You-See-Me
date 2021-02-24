@@ -279,7 +279,7 @@ end
 
 % WE HAVE FINAL VALUES, NOW DETERMINE WINNER
 %fix for three players!!
-if dealerTotVal>=player1Val & dealerTotVal >= player2Val
+if dealerTotVal>=player1Val & dealerTotVal>=player2Val
     %dealer wins
    
     playblackjack
