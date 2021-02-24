@@ -1,5 +1,9 @@
 %Begin hand
 
+%cardDeck = 1:1:52;   				%%  a deck of card has 52 elements
+%card = datasample(cardDeck,1);  		%%  draw one card 
+%cardDeck = cardDeck(find(cardDeck~=card));  %% take that card away from the deck. Now there are 51 cards. Next time you just draw the card from this new cardDeck.
+
 deck= ['KingSpades','KingHearts','KingDiamonds','KingClubs','JackSpades','JackHearts','JackDiamonds','JackClubs','AceSpades','AceHearts','AceDiamonds','AceClubs','10Spades',......
     '10Hearts','10Diamonds','10Clubs','9Spades','9Hearts','9Diamonds','9Clubs','8Spades','8Hearts','8Diamonds','8Clubs','7Spades','7Hearts',......
     '5Spades','5Hearts','5Diamonds','5Clubs','4Spades','4Clubs','4Hearts','4Diamonds','3Spades','3Clubs','3Diamonds','3Hearts','2Spades',......
