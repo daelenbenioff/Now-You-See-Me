@@ -18,7 +18,7 @@ deck(1)
 if dealerCardIndex==1
     dCard=('AceSpades');
     %determines if count should use 11 or 1
-    testAce=((dealercount)+11);
+    testAce=((dealerTotValue)+11);
     if testAce > 21 
         dealerCardValue=1;
     else 
@@ -28,7 +28,7 @@ if dealerCardIndex==1
 elseif dealerCardIndex==2
     dCard=('AceClubs');
     %determines if count should use 11 or 1
-    testAce=((dealercount)+11);
+    testAce=((dealerTotValue)+11);
     if testAce > 21 
         dealerCardValue=1;
     else 
@@ -38,7 +38,7 @@ elseif dealerCardIndex==2
 elseif dealerCardIndex==3
     dCard=('AceDiamonds');
     %determines if count should use 11 or 1
-    testAce=((dealercount)+11);
+    testAce=((dealerTotValue)+11);
     if testAce > 21 
         dealerCardValue=1;
     else 
@@ -48,7 +48,7 @@ elseif dealerCardIndex==3
 elseif dealerCardIndex==4
     dCard=('AceHearts');
     %determines if count should use 11 or 1
-    testAce=((dealercount)+11);
+    testAce=((dealerTotValue)+11);
     if testAce > 21 
         dealerCardValue=1;
     else 
